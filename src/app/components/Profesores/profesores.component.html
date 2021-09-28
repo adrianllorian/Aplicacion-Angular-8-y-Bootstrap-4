@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12"> <h1 class="text-secondary">{{titulo}}</h1></div>
+       
+    </div>
+    <div class="row">
+     <table class="table">
+         <tr>
+        <th>ID</th>
+         <th>NOMBRE</th>
+         <th>SALARIO</th>
+         <th>FECHA</th>
+         
+        </tr>
+         <tr *ngFor="let profe of array">
+             <td>{{profe.id}}</td>
+             <td>{{profe.nombre}}</td>
+             <td>{{profe.salario }}</td>
+             <td>{{profe.fecha | date:"MM/dd/yy"}}</td>
+         </tr>
+     </table>
+    </div>
+
+    <div class="row mt-2">
+        <h1 class="text-secondary">Cadena con pipe personalizado</h1>
+    </div>
+    <div class="row">
+        <h4>{{cadenaPipe | miPipe:1}}</h4>
+    </div>
+    <div class="row">
+        <h4>{{cadenaPipe | miPipe:2}}</h4>
+    </div>
+</div>

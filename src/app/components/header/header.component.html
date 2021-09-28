@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row fondo d-flex flex-row-reverse">
+        <div class="col-2">
+            <img src="../../../assets/img/Logo_marvel.png" class="img-fluid" alt="foto">
+        </div>
+
+        <div class="col-4 pt-3">
+            
+       
+       
+                <i class="fas fa-rocket iconos_menu icono_1 mt-3  d-none d-lg-block d-md-block"></i>
+                <div class="input-group mb-3 col-lg-10 col-md-10 col-12 mt-3">
+                  <input type="text" class="form-control" placeholder="Amigos, Lugares y cosas que te gustan" aria-label="Amigos, Lugares y cosas que te gustan" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-light" type="submit" id="button-addon2"><i class="fas fa-search text-grey" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+            </div>  
+        </div>
+
+    <div class="row bg-light">
+        <div class="col-12 d-flex">
+            <ul class="list-inline mx-auto">
+                <li *ngFor="let boton of menu" class="list-inline-item ml-4 mr-4 pt-2"><a href="#" routerLink="{{boton.enlace}}" class="text-secondary">{{boton.nombre}}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

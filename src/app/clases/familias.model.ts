@@ -1,0 +1,4 @@
+class familias{
+    titulo:string;
+}
+

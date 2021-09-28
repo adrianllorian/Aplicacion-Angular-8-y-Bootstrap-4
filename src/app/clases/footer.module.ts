@@ -1,0 +1,3 @@
+class footer{
+    menu:String[];
+}

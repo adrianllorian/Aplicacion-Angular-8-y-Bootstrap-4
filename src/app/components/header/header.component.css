@@ -1,0 +1,13 @@
+.fondo{
+    background-image: url(../../../assets/img/fondo.jpg);
+}
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+

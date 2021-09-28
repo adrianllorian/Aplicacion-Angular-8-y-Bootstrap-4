@@ -1,0 +1,38 @@
+
+<div class="container">
+   <div class="row">
+       <div class="col-12">
+           <h1>Ciclos</h1>
+        </div> 
+    </div>
+    <div class="row">
+<h3 class="text-secondary ml-3">
+    {{departamento.nombre}}
+</h3>
+</div>
+<div class="row">
+    <div class="col-12 d-flex justify-content-center">
+        <img src="{{departamento.foto}}" class="center-block">
+    </div>
+</div>
+    <div class="row mt-4">
+        <div class="col-6">
+            <table class="table">
+                <tr>
+                    <th>Código</th>
+                    <th>Asignatura</th>
+                </tr>
+                <tr *ngFor="let curso of modulos">
+                    <td>{{curso.id}}</td>
+                    <td>{{curso.nombre}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<div class="row mt-5">
+<div class="col-12">
+    <button><a href="#" routerLink="/DEPARTAMENTOS">Volver a departamentos</a></button>
+</div>
+</div>
+
+</div>
